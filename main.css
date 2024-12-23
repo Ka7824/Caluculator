@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#container {
+    display: inline-block;
+}
+
+#result {
+    height: 30px;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.first,.second,.third,.fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 10px;
+}
+

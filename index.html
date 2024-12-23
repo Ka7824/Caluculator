@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="result" value="0" disabled>
+
+        <div class="first">
+            <button onclick="symbol('7')">7</button>
+            <button onclick="symbol('8')">8</button>
+            <button onclick="symbol('9')">9</button>
+            <button onclick="operator('/')">÷</button>
+        </div>
+        <div class="second">
+            <button onclick="symbol( '4' )">4</button>
+            <button onclick="symbol( '5' )">5</button>
+            <button onclick="symbol( '6' )">6</button>
+            <button onclick="operator('*')">×</button>
+        </div>
+        <div class="third">
+            <button onclick="symbol('1')" >1</button>
+            <button onclick="symbol('2')" >2</button>
+            <button onclick="symbol('3')" >3</button>
+            <button onclick="operator('-')">-</button>
+        </div>
+        <div class="fourth">
+            <button onclick="zero('0')">0</button>
+            <button onclick="doubleZero('00')" >00</button>
+            <button onclick="point('.')" >.</button>
+            <button onclick="operator('+')">+</button>
+        </div>
+        <div class="last">
+            <button class="clear" onclick="erase('0')">AC</button>
+            <button class="equal" onclick="calculation()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
